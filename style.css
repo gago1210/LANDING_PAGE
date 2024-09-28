@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjord+One&family=Neuton&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Neuton", serif;
+}
+body{
+    background-image: url(IMAGENES/fondo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+section{
+    position:relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*corresponde al nombre*/
+header .logo{ 
+    color:white;
+    font-size: 1.5em;
+    text-decoration: none;
+    background:black;
+    border-radius: 20px;
+    padding:0 10px;
+    font-family: "Fjord One", serif;
+    font-weight: 200px;
+}
+header .logo:hover {
+    color: black;
+    background: whitesmoke;
+    transition: 2s;
+}
+/*CORRESPONDE A LA BARRA DEL MENU*/
+header .barranavegacion{
+    position: relative;
+    display: flex;
+}
+header .barranavegacion li{
+    list-style: none;
+    margin-left: 150px;
+}
+header .barranavegacion li a{
+    text-decoration: none;
+    color: white;
+    background: black;
+    font-weight: 600px;
+    padding: 10px;
+    transition: 1.5s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+header .barranavegacion li a:hover{
+    border-bottom: 5px solid black;
+    padding: 2px;
+    border-radius:20px;
+}
+
+/*hasta aqui tengo la parte superior de la web modificada*/
+/*ahora modifico la parte del contenido, parte central*/
+
+.contenido{
+    position: relative;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.contenido .tituloBox{
+    position: relative;
+    max-width: 500px;
+    text-align: center;
+}
+.contenido .tituloBox h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    color:black;
+}
+/*aqui modifico la caja de tecnico de rayos y auxiliar*/
+.contenido .tituloBox h2 span{
+    background: grey;
+    color: black;
+    padding: 0 10px;
+    font-family: "Fjord One", serif;
+    font-weight: 100;
+   
+    border-radius:20px;
+}
+/*aqui indico la titulacion*/
+.contenido .tituloBox p{
+    font-size: 20px;
+    line-height: 1.5;
+    color: black;
+    font-family: "Fjord One", serif;
+    font-weight: 300px;
+    margin-bottom: 20px;
+}
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    background: black;
+    padding:10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 2s;
+}
+.contenido .tituloBox a:hover{
+    color: white;
+    background:grey;
+    transition: 2s;
+
+}
+.contenido .imgBox{
+    display: flex;
+    justify-content: flex-end;
+}
+/*edito la parte del copyright*/
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+    color:black;
+    text-align: center;
+}
+/*edito los iconos de redes sociales*/
+.redesSociales{
+    position:absolute;
+    right: 0px;
+    bottom: 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+.redesSociales li{
+    padding: 10px;
+}
+.redesSociales li a{
+    color: black;
+    font-size: 2em;
+    transition: 3s;
+}
+.redesSociales li:hover a{
+    color: white;
+}
+
+/*aqui empiezo a modificar la segunda parte de la landing page en lo referente al apartado conoceme*/
+.presentacion{
+    border-collapse: collapse;
+    background-color: grey;
+    border-radius: 20px;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.presentacion td,tr{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    font-size: x-large;
+}
+.presentacion .imagenyo{
+    position: center;
+    max-width:500px;
+    max-height: 500px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+/* aqui modifico la parte de cv*/
+.contenidocv {
+    border-collapse: collapse;
+    background-color: grey;
+    border-radius: 20px;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.contenidocv .cv td,tr {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    font-size: x-large;
+}
+/*ahora modifico la parte de proyectos*/
+.contenidoproyectos {
+    border-collapse: collapse;
+    background-color: grey;
+    border-radius: 20px;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.contenidoproyectos .proyectos p{
+    font-size: 0.75em;
+}
+.contenidoproyectos .proyectos .imgproyectos img {
+    height: 275px;
+    width: 325px;
+    border-radius: 20px;
+}
+/*ahora modifico el formulario*/
+.fraseformulario{
+    position: center;
+    text-align: center;
+    color: black;
+    margin:auto;
+    font-size: 50px;
+}
+.formulario{
+    background-color: grey;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    padding:5px
+}
+.formulario legend{
+    font-size: 30px;
+}
+.formulario label, input{
+    font-size: 20px;
+    
+}
